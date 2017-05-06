@@ -10,4 +10,7 @@ The first approach of restarting the ESP8266 might seem a bit clunky but it actu
 
 The second approach with using two ESP8266s is more complicated to set up but also more robust and allows higher throughput. I've used a simple serial link with the ESP-Now receiver simply writing the received data to the Serial port which another ESP8266 can read using SoftwareSerial. You could also try writing a more fancy I2C or SPI driver too. 
 
-Some sample code for these are in this repository.
+These are some ESP-Now devices, a battery powered temperature/humidity/pressure sensor built into a LED light case and an ESP-Now to Wifi Gateway using the DIY USB powered ESP (described [here](https://github.com/HarringayMakerSpace/usb-esp)). Sample code for these are in this repository.
+
+![Alt text](/doc/devices.jpg?raw=true "ESP-Now sensor and Wifi Gateway")
+
