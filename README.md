@@ -16,4 +16,4 @@ Sample code for these are in this repository.
 
 ![Alt text](/doc/devices.jpg?raw=true "ESP-Now sensor and Wifi Gateway")
 
-You can see the data from that ESP-Now base BME280 sensor thats in my back garden in London [here](https://s3.eu-west-2.amazonaws.com/torntrousers/espnow-test1.html).
+You can see the data from that ESP-Now base BME280 sensor thats in my back garden in London [here](http://s3.eu-west-2.amazonaws.com/torntrousers/espnow-test1.html).
