@@ -31,6 +31,7 @@ const char* password = "<yourWifiPassword>";
  */
 uint8_t mac[] = {0x36, 0x33, 0x33, 0x33, 0x33, 0x33};
 void initVariant() {
+  WiFi.mode(WIFI_AP);
   wifi_set_macaddr(SOFTAP_IF, &mac[0]);
 }
 
@@ -67,7 +68,6 @@ volatile boolean haveReading = false;
 void setup() {
   Serial.begin(115200); Serial.println();
 
-  WiFi.mode(WIFI_STA);
   Serial.print("This node AP mac: "); Serial.println(WiFi.softAPmacAddress());
   Serial.print("This node STA mac: "); Serial.println(WiFi.macAddress());
 
