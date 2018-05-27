@@ -1,5 +1,7 @@
 # ESP-Now
 
+### Note: *** help make this 5 times faster and so extend the battery life 5 times longer - ask to get this issue fixed: https://github.com/esp8266/Arduino/issues/3408 ***
+
 ESP-Now is an interesting ESP8266 protocol that could be used for battery powered sensors. Its built on top of 802.11 vendor-specific action frames which enables sending data without having to first establish a WiFi AP to Station connection which is time consuming and so adds significantly to draining the batteries on each sensor wakeup.  
 
 I've given some examples of it before, [here](https://github.com/HarringayMakerSpace/IoT/tree/master/ESP-Now), however ESP-Now doesn't work with Wifi so a gateway receiving ESP-Now transmissions can't also connect to a Wifi network, so thats made it pretty impractical for most uses.
