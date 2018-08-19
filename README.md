@@ -1,6 +1,6 @@
 # ESP-Now
 
-### Note: *** help make this 5 times faster and so extend the battery life 5 times longer - ask to get this issue fixed: https://github.com/esp8266/Arduino/issues/3408 ***
+### Update: *** As of 19 Aug 2018 the latest ESP8266/Arduino code has fixed https://github.com/esp8266/Arduino/issues/3408 and added a deepSleepInstant function. This means an ESP-Now sensor can do the wakeup-send-sleep cycle in around 40 milliseconds, about an order of magnitude faster than previously. I've added a minimal example demonstrating this in [espnow-sensor-minimal](https://github.com/HarringayMakerSpace/ESP-Now/blob/master/espnow-sensor-minimal/espnow-sensor-minimal.ino) ***
 
 ESP-Now is an interesting ESP8266 protocol that could be used for battery powered sensors. Its built on top of 802.11 vendor-specific action frames which enables sending data without having to first establish a WiFi AP to Station connection which is time consuming and so adds significantly to draining the batteries on each sensor wakeup.  
 
