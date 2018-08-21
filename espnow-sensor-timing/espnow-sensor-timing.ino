@@ -3,9 +3,6 @@
 
  Sends readings to an ESP-Now server with a fixed mac address, timing how long wake-send-sleep takes
 
- Fastest is with CPU Frequency 160MHz, Flash Mode QIO and Flash Frequency 80MHz 
- (available in Tools menu with Board: Generic ESP8266 module selected)
-
  Anthony Elder
  License: Apache License v2
 */
