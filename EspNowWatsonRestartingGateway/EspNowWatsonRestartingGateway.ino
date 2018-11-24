@@ -76,6 +76,13 @@ void setup() {
 
 int heartBeat;
 
+void resetWifi() {
+ //resets wifi connections and re enables ESP-NOW 
+  WiFi.persistent(false);
+  WiFi.disconnect(1);
+  WiFi.mode(WIFI_OFF);
+  WiFi.mode(WIFI_STA);
+}
 void loop() {
   if (millis()-heartBeat > 30000) {
     Serial.println("Waiting for ESP-NOW messages...");
@@ -89,7 +96,7 @@ void loop() {
     sendToWatson();
     client.disconnect();
     delay(200);
-    ESP.restart(); // <----- Reboots to re-enable ESP-NOW
+    resetWifi();
   }
 }
 
